@@ -2,6 +2,7 @@ discount_percentage = 15
 max_amount = 69000
 best_amount = 0
 max_discount_in_dollars = 0
+
 for value in range(max_amount+1):
     discount = value * discount_percentage / 100
 
