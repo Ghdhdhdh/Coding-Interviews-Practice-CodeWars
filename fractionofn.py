@@ -18,7 +18,8 @@ def getdenominator():
 def getwholenumber():
 	global wholenumber
 	wholenumber = int(input(f"""What the whole number? (As in {numerator}
-                                /{denominator} of whole number"""))
+                              -
+                              {denominator} of whole number"""))
 
 while True:
 	try:
@@ -50,4 +51,8 @@ while True:
 		
 
 pass
-print(f"{numerator} {denominator}th's of {wholenumber} is {wholenumber / denominator * numerator}")
+
+if wholenumber / denominator * numerator % 2 == 0:
+	print(f"{numerator} {denominator}th's of {wholenumber} is {wholenumber // denominator * numerator}")
+else:
+	print(f"{numerator} {denominator}th's of {wholenumber} is {wholenumber / denominator * numerator}")

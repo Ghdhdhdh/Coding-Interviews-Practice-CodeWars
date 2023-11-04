@@ -1,5 +1,5 @@
-for first in range(0, 9999):
-	for second in range(0, 9999):
+for first in range(0, 99999):
+	for second in range(0, 99999):
 		if not first == 0 or second == 0:
 			try:
 				if first // second == first / second:
@@ -9,3 +9,4 @@ for first in range(0, 9999):
 					print(f"{first} {second} {first // second}")
 			except ZeroDivisionError:
 				pass
+	
